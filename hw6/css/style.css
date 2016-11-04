@@ -104,43 +104,43 @@ h1 {
 }
 
 /* syling overall look of table */
-.ctable {
+.formtable {
 	display:table;
-    margin-right: auto;
-    margin-left: auto;
-    color:white;
-    background: #FFCDBC;
-    width: 62%
+    	margin-right: auto;
+    	margin-left: auto;
+    	color:white;
+    	background: #FFCDBC;
+    	width: 62%
 }
 
 /* styling just the top row */
 .toprow {
 	background: #B16348;
-    border: 3px solid #B2664C;
-    color: #FF8000;
+   	border: 3px solid #B2664C;
+    	color: #FF8000;
 	padding: 10px;}
 
 /* styling just the left column */
-.leftmostcol {
+.leftcolum {
 	padding: 10px;
-    background: #B16348;
-    border:3px solid #B2664C;
-    color:#FF8000;
+    	background: #B16348;
+    	border:3px solid #B2664C;
+    	color:#FF8000;
 }
 
 /* styling the products, basically the inner box */
 .tablebody {
-    background: #FFCDBC;
-    border:2px solid #FFE2D8;
-    color: #FF8000;
+	background: #FFCDBC;
+	border:2px solid #FFE2D8;
+    	color: #FF8000;
 }
 
 /* styling for validators */
-.bottom {
-    margin: auto;
-    padding: 10px;
-    display:table;
-    bottom: auto;   
+.validator {
+    	margin: auto;
+    	padding: 10px;
+   	display:table;
+    	bottom: auto;   
 }
 
 /* styling for create buttom for the form */
