@@ -71,7 +71,7 @@ h1 {
 .container .col2
 .container .col3
 .container .col4, {
-    width 49%;
+    width: 49%;
 }
 .container .col1 {
 	float: left;
