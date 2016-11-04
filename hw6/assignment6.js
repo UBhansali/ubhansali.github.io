@@ -68,7 +68,7 @@ function create_table(created_array) {
     var data = "";
 	
 	/* making a table tag and giviing it a class called formtable */
-    data = data + "<table class='ctable'>";
+    data = data + "<table class='formtable'>";
 	
     /* empty spot on the top left */
     data = data + "<tr ><td class='toprow'></td>";
@@ -87,7 +87,7 @@ function create_table(created_array) {
 	
     /* filling in the products into the table */
     for(var a = first_column; a <= last_column; a++) {
-        data = data + "<tr><td class ='leftmostcol'>" + a + "</td>";
+        data = data + "<tr><td class ='leftcolumn'>" + a + "</td>";
         for(var b = first_row; b <= last_row; b++) {
             data = data + "<td class='tablebody'>" + created_array[row][column] + "</td>";
             row++;
