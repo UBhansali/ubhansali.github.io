@@ -14,53 +14,51 @@ a multiplication function to draw a table.
 Copyright (c) 2016 by Udit Bhansali.  All Rights Reserved.  
 May be freely copied or excerpted for educational purposes with credit to the author.
 -->
-	<head>
-		<meta charset="utf-8">
-		<link href="css/style.css" rel="stylesheet">
-		<title>Udit Bhansali's web page</title>
-	</head>	
-	<body>
-
-		<!-- Navigation menu -->
-		<div class="wrapper">
-			<ul class="navibar">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="https://ubhansali.github.io/hw2/">Assignment 2</a></li>
-				<li><a href="https://ubhansali.github.io/hw3/">Assignment 3</a></li>
-				<li><a href="#">Assignment 4</a></li>
-				<li><a href="/hw6/">Assignment 6</a></li>
-			</ul>
-		</div>
-
-		<!-- Main content area -->
-		<!--Created a form using w3schools
-		http://www.w3schools.com/js/js_input_examples.asp was for finding values
-            	in each element. The form is Javascript/HTML.-->
-		<div class="container">
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Udit Bhansali's web page</title>
+</head>	
+<body>
+	<!-- Navigation menu -->
+	<div class="wrapper">
+		<ul class="navibar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="/hw2/">Assignment 2</a></li>
+			<li><a href="/hw3/">Assignment 3</a></li>
+			<li><a href="#">Assignment 4</a></li>
+			<li><a href="/hw6/">Assignment 6</a></li>
+		</ul>
+	</div>
+	<!-- Main content area -->
+	<!--Created a form using w3schools
+	http://www.w3schools.com/js/js_input_examples.asp was for finding values
+        in each element. The form is Javascript/HTML.-->
+	<div class="container">
             <form id="frm1" onsubmit ="return mult_calc();">
-				<div class="col1">
-					<p class="alignform">Start row value:</p>
-					<input type="number" name="first row" id="first_r">
-				</div>
-				<div class="col2">
-					<p class="alignform">End row value:<br></p>
-					<input type="number" name="last row" id="last_r">
-				</div>
-				<div class="col3">
-					<p class="alignform">Start column value:</p>  
-					<input type="number" name="first column" id="first_c">
-				</div>
-				<div class="col4">
-					<p class="alignform">End column value:</p> 
-					<input type="number" name="last column" id="last_c">
-				</div>				
-				<div class="clear"></div>
-				<br>
-				<div class="actions">
-					<button onclick="mult_calc()" >CREATE</button>
-				</div>
+		    <div class="col1">
+			    <p class="alignform">Start row value:</p>
+			<input type="number" name="first row" id="first_r">
+		    </div>
+		    <div class="col2">	
+			    <p class="alignform">End row value:<br></p>
+			    <input type="number" name="last row" id="last_r">
+		    </div>
+		    <div class="col3">
+		            <p class="alignform">Start column value:</p>  
+			    <input type="number" name="first column" id="first_c">
+		    </div>
+		    <div class="col4">
+       	                    <p class="alignform">End column value:</p> 
+			    <input type="number" name="last column" id="last_c">
+		    </div>				
+		    <div class="clear"></div>
+		    <br>
+	            <div class="actions">
+			<button onclick="mult_calc()" >CREATE</button>
+		    </div>
             </form>
-            
+		
         </div>
         <div id="dynamic_table"></div>
         <br>
@@ -70,11 +68,11 @@ May be freely copied or excerpted for educational purposes with credit to the au
         
         <p class="bottom">
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-                alt="Valid CSS!" />
+		    <img style="border:0;width:88px;height:31px"
+			 src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+			 alt="Valid CSS!" />
             </a> 
 	    <a href="https://validator.w3.org/check?uri=referer">
-                <img alt="Valid HTML4.01" src="https://www.w3.org/Icons/valid-html401-blue.png" /></a>
+            <img alt="Valid HTML4.01" src="https://www.w3.org/Icons/valid-html401-blue.png" /></a>
         </p>
     </body>
