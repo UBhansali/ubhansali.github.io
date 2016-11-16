@@ -1,5 +1,5 @@
 /* 
-    Name: Udit Bhansali
+    	Name: Udit Bhansali
 	Course: GUI I
 	Assignment #7
 */
@@ -73,30 +73,29 @@ function mult_calc() {
     console.log(first_row, last_row, first_column, last_column);
     
     $("#warning").empty();
-    if(last_row < first_row) {
-        var temp = first_row;
-        first_row = last_row;
-        last_row = temp;
-    }
-
+	if(last_row < first_row) {
+        	var temp = first_row;
+        	first_row = last_row;
+        	last_row = temp;
+	}
 	$("#warning").empty();
 	if(last_column < first_column) {
-        var temp = first_column;
-        first_column = last_column;
-        last_column = temp;
-    }
+        	var temp = first_column;
+        	first_column = last_column;
+        	last_column = temp;
+    	}
 
 	var array = [];
-    /* Indexes for 2D array */
-    var row = 0;
-    var column = 0;
+    	/* Indexes for 2D array */
+    	var row = 0;
+    	var column = 0;
     
 	/* Creating a 2D array */
-    for (var i = 0; i <= Math.abs((last_row - first_row)); i++) {
-        array[i] = [];
-    }
+    	for (var i = 0; i <= Math.abs((last_row - first_row)); i++) {
+        	array[i] = [];
+	}
     
-    /* Rows and columms are indexes of my 2D array. Everytime a row is completed
+    	/* Rows and columms are indexes of my 2D array. Everytime a row is completed
 	we reset row back to 0th index and do the same for next line. This continues 
 	till the condition fails. Calculate the values in the multiplication table */
     for(var a = first_column; a <= last_column; a++) {
@@ -107,7 +106,6 @@ function mult_calc() {
         row = 0;
         column++;  
     }
-   
     create_table(array);
     console.log(array);
     return false;
@@ -150,7 +148,7 @@ function create_table(created_array) {
     var row = 0;
     var column = 0;
 	
-    // filling in the products into the table
+    /* filling in the products into the table */
     for(var a = first_column; a <= last_column; a++) {
         data = data + "<tr><td class ='leftcolumn'>" + a + "</td>";
         for(var b = first_row; b <= last_row; b++) {
@@ -166,6 +164,6 @@ function create_table(created_array) {
         /* closing table tag */
         data = data + "</table>";
         
-				/* Load in to HTML  */
+	/* Load in to HTML  */
         $("#dynamic_table").html(data);
 }
