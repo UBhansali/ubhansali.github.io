@@ -150,7 +150,7 @@ function create_table(created_array) {
     var row = 0;
     var column = 0;
 	
-    /* filling in the products into the table */
+    // filling in the products into the table
     for(var a = first_column; a <= last_column; a++) {
         data = data + "<tr><td class ='leftcolumn'>" + a + "</td>";
         for(var b = first_row; b <= last_row; b++) {
