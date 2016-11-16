@@ -38,28 +38,28 @@ May be freely copied or excerpted for educational purposes with credit to the au
 	http://www.w3schools.com/js/js_input_examples.asp was for finding values
     in each element. The form is Javascript/HTML.-->
 	<div class="container">
-            <form id="frm1" name="frm1" method="GET" action="">
-		    
+            <form id="frm1" name="frm1" method="GET" action="#">
+	    <script>document.querySelector("form").setAttribute("action", "")</script>
 			<div class="col1">
-				<div id='a7alert'>
+				<div class='a7alert'>
 					<p class="alignform">Start row value</p>
 					<input type="number" name="first_r" id="first_r">
 				</div>
 			</div>
 			<div class="col2">	
-				<div id='a7alert'>
+				<div class='a7alert'>
 					<p class="alignform">End row value<br></p>
 					<input type="number" name="last_r" id="last_r">
 				</div>
 			</div>
 			<div class="col3">
-				<div id="a7alert">
+				<div class="a7alert">
 					<p class="alignform">Start column value</p>  
 					<input type="number" name="first_c" id="first_c">
 				</div>
 		    </div>	
 			<div class="col4">
-				<div id="a7alert">
+				<div class="a7alert">
 					<p class="alignform">End column value</p> 
 					<input type="number" name="last_c" id="last_c">
 				</div>				
