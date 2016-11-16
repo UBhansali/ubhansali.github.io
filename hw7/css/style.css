@@ -7,7 +7,7 @@
 /* styling for body */
 body {
 	font-family: Cambria, Georgia, serif;
-    color: #FFCDBC;
+    	color: #FFCDBC;
 	background-color: #F5853F;
 }
 
@@ -34,20 +34,20 @@ ul.navibar {
 
 /* CSS for list elements */
 li {
-    	display: inline;
+	display: inline;
 	text-align: center;
 	padding: 6px 18px 5px 18px;
 }
 
 li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+	background-color: #111;
 }
 
 /* heading text */
@@ -104,13 +104,13 @@ h1 {
 
 /* jQuery error message styling */
 #a7alert {
-    color: red;
-    font-style: italic;
+	color: red;
+	font-style: italic;
 }
 
 /* overriding the default .error class that the validator makes */
 input.error {
-    border:  3px solid red;
+	border:  3px solid red;
 }
 
 /* aligning the texts and the input boxes along with changing text colors to match the rest of the page */
@@ -123,11 +123,11 @@ input.error {
 /* syling overall look of table */
 .formtable {
 	display:table;
-    margin-right: auto;
-    margin-left: auto;
-    color:white;
-    background: #FFCDBC;
-    width: 62%
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background: #FFCDBC;	
+	width: 62%
 }
 
 /* styling just the top row */
@@ -141,8 +141,8 @@ input.error {
 .leftcolumn {
 	padding: 10px;
     	background: #B16348;
-    	border:3px solid #B2664C;
-    	color:#FF8000;
+    	border: 3px solid #B2664C;
+    	color: #FF8000;
 }
 
 /* styling the products, basically the inner box */
@@ -156,11 +156,11 @@ input.error {
 .validator {
     	margin: auto;
     	padding: 10px;
-   	display:table;
+   	display: table;
     	bottom: auto;   
 }
 
 /* styling for create buttom for the form */
 .actions {
-	text-align:center;
+	text-align: center;
 }
