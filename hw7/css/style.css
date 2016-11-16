@@ -103,7 +103,7 @@ h1 {
 }
 
 /* jQuery error message styling */
-.a7alert {
+.container a7alert {
     color: red;
     font-style: italic;
 }
