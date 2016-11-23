@@ -1,0 +1,162 @@
+/* Udit Bhansali
+   Assignment #8
+   Udit_Bhansali@student.uml.edu
+   November 22, 2016
+*/
+
+/* styling for body */
+body {
+	font-family: Cambria, Georgia, serif;
+    	color: #FFCDBC;
+	background-color: #F5853F;
+}
+
+/* Navigation bar */
+ul.navibar {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.wrapper ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.wrapper li {
+	float: left;
+	padding: 2px 5px;
+}
+
+/* CSS for list elements */
+li {
+	display: inline;
+	text-align: center;
+	padding: 6px 18px 5px 18px;
+}
+
+li a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/* heading text */
+h1 {
+	font-family: Cambria, Georgia, serif;
+}
+
+.container {
+	color: white;
+	margin:0 auto 0;
+	box-sizing: border-box;
+    	border:3px solid #B2664C;
+    	padding: 10px;
+    	background: #FFCDBC;
+    	width: 500px;
+	overflow: visible;
+}
+/* stlying for form fields 
+.container .col1
+.container .col2
+.container .col3
+.container .col4 {
+    width: 49%;
+}
+.container .col1 {
+	float: left;
+	clear: left;
+}
+.container .col2 {
+    float: right;
+}
+.container .col3 {
+    	float: left;
+	clear: left;
+}
+.container .col4 {
+    	float: right;
+}
+*/
+
+.container form{
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clear{
+	clear:both;
+}
+
+/* jQuery error message styling */
+#a7alert {
+	color: red;
+	font-style: italic;
+}
+
+/* overriding the default .error class that the validator makes */
+input.error {
+	border:  3px solid red;
+}
+
+/* aligning the texts and the input boxes along with changing text colors to match the rest of the page */
+.alignform {
+	margin-left:auto;
+	margin-right:auto;
+	color:#FF8000;
+}
+
+/* syling overall look of table */
+.formtable {
+	display:table;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background: #FFCDBC;	
+	width: 62%
+}
+
+/* styling just the top row */
+.toprow {
+	background: #B16348;
+   	border: 3px solid #B2664C;
+    	color: #FF8000;
+	padding: 10px;}
+
+/* styling just the left column */
+.leftcolumn {
+	padding: 10px;
+    	background: #B16348;
+    	border: 3px solid #B2664C;
+    	color: #FF8000;
+}
+
+/* styling the products, basically the inner box */
+.tablebody {
+	background: #FFCDBC;
+	border:2px solid #FFE2D8;
+    	color: #FF8000;
+}
+
+/* styling for validators */
+.validator {
+    	margin: auto;
+    	padding: 10px;
+   	display: table;
+    	bottom: auto;   
+}
+
+/* styling for create buttom for the form */
+.actions {
+}
+	text-align: center;
