@@ -1,7 +1,7 @@
 /* Udit Bhansali
-   Assignment #8
+   Assignment #7
    Udit_Bhansali@student.uml.edu
-   November 22, 2016
+   November 15, 2016
 */
 
 /* styling for body */
@@ -160,3 +160,9 @@ input.error {
 .actions {
 }
 	text-align: center;
+
+/* Overriding jquery css */
+#ui-widget-content {
+	border: 1px solid #B2664C;
+	background: #B2664C url("images/ui-bg_loop_25_000000_21x21.png") 50% 50% repeat;
+	color: #ffffff;
