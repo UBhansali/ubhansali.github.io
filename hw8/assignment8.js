@@ -168,8 +168,7 @@ function create_table(created_array) {
 }
 
 function slider() {
-    // I set my slider min's and max to -15 and 15 to match my input range in the
-    // form.
+    /* I set my slider min's and max to -8 and 8 to match my input range */
     $("#first_row_slider").slider({
         
         min: -8,
@@ -181,14 +180,12 @@ function slider() {
         }
         
     });
-// keyboard inputs, the validator will detect any errors, and will adjust the slider
-// according to the user input. Same thing applies for the rest of the sliders.
+/* The validator will detect any errors, and will adjust the slider according to the 
+   user input. Same thing applies for the rest of the sliders. */
     $("#first_r").on("keyup", function() {
         $("#first_row_slider").slider("value", this.value);
         auto_submit();
     });
-    
-//    $("#first_horizontal").val($("#first_horiz_slider").slider("value"));
     
     $("#last_row_slider").slider({
         min: -8,
@@ -204,7 +201,7 @@ function slider() {
         auto_submit();   
     });
    
-// first vertical sliders
+/* first column slider */
     $("#first_column_slider").slider({
         min: -8,
         max: 8,
@@ -218,9 +215,9 @@ function slider() {
         $("#first_column_slider").slider("value", this.value);
         auto_submit();
     });
-//    $("#first_vertical").val($("#first_vert_slider").slider("value")); 
+/*    $("#first_c").val($("#first_column_slider").slider("value")); */
 
-// last vertical sliders
+/* last column slider */
     $("#last_column_slider").slider({
         min: -8,
         max: 8,
@@ -234,26 +231,26 @@ function slider() {
         $("#last_column_slider").slider("value", this.value);
         auto_submit();
     });
-//    $("#last_vertical").val($("#last_vert_slider").slider("value"));    
+/*    $("#last_vertical").val($("#last_vert_slider").slider("value")); */
 }
 
-// This part was to make it so my table dynamically change as I changed the inputs
-// and sliders. I got help from this site: https://stackoverflow.com/questions/1200266/submit-a-form-using-jquery
+/* This part was to make it so my table dynamically change as I changed the inputs and sliders. 
+I got help from this site: https://stackoverflow.com/questions/1200266/submit-a-form-using-jquery */
 function auto_submit() {
     if($("form#frm1").valid() == true) {
         $("form#frm1").submit();
     }
 }
-// This was to fix an issue where if I were to close a tab out of order
+/* This was to fix an issue where if I were to close a tab out of order */
 var tab_count_global = 1;
 function generate_tabs() {
    
     var counter = $('div#tabs ul li.tab').length + 1;
   //  counter++;
     
-    // I used a global variable here because one problem I encountered was when
-    // I closed a tab out of order, in that if closed the very first tab, and then
-    // add a new tab, there will be two tables in each tabs.
+    /* I used a global variable here because one problem I encountered was when
+       I closed a tab out of order, in that if closed the very first tab, and then
+       add a new tab, there will be two tables in each tabs. */
     tab_count_global++;
      $("#tabs").tabs();
     var first_row = Number(document.getElementById('first_r').value) ;
@@ -262,27 +259,27 @@ function generate_tabs() {
     var last_column = Number(document.getElementById('last_c').value);
 	
     
-    // This was to title the tab, and name the title where horizontal values
-    var tab_name = "<li class='tab'><a href='#tab-" + tab_count_global + "'>" + first_row
-                    + " to " + last_row + " by " + first_column + " to " + last_column
-                    + "</a> " + "<span class='ui-icon ui-icon-close' role='presentation'></span>"+
+    /* This was to title the tab, and name the title where horizontal values */
+    var tab_name = "<li class='tab'><a href='#tab-" + tab_count_global + "'>" + "</a> " + 
+			"<span class='ui-icon ui-icon-close' role='presentation'></span>"+
                     "</li>";
             
-    // add on the name of tab        
+    /* add on the name of tab */
     $("div#tabs ul").append(tab_name);
-    // add the table to the tab
+	
+    /* add the table to the tab */
     $("div#tabs").append('<div id="tab-' + tab_count_global + '">' + $("#dynamic_table").html() + '</div>');
-    // refresh so new tabs appear
-    // making tab active
+
+    /* making tab active */
     $("#tabs").tabs("refresh");
     $("#tabs").tabs("option", "active", -1);
     
-    // remove option from jQuery UI http://jqueryui.com/tabs/#manipulation 
+    /* remove option from jQuery UI http://jqueryui.com/tabs/#manipulation */
     $("#tabs").delegate("span.ui-icon-close", "click", function() {
         var panelID = $(this).closest("li").remove().attr("aria-controls");
         $("#" + panelID).remove();
         
-        // resets the tabs to prevent exceptions and errors from appearing from the console
+        /* resets the tabs to prevent exceptions and errors from appearing from the console */
         try {
             $("#tabs").tabs("refresh");
         }
@@ -290,8 +287,8 @@ function generate_tabs() {
             
         }
         
-        // if there is one tab reset the page to its original state.
-        // I used this site as reference: https://api.jqueryui.com/tabs/#method-destroy
+        /* if there is one tab reset the page to its original state.
+           using https://api.jqueryui.com/tabs/#method-destroy */
         if($('div#tabs ul li.tab').length == 0) {
             try {
                 $("#tabs").tabs("destroy");
