@@ -259,8 +259,12 @@ function generate_tabs() {
     var last_column = Number(document.getElementById('last_c').value);
 	
     
-    /* This was to title the tab, and name the title where horizontal values */
-    var tab_name = $('div[id="mytabs"] ul .ui-tabs-active > a').attr("href");
+    /* This was to title the tab, and name the title where horizontal values 
+    Using http://stackoverflow.com/questions/5912762/jquery-ui-tabs-how-to-select-a-tab-based-on-its-id-not-based-on-index */
+    var tab_name = "<li class='tab'><a href='#tab-" + tab_count_global + "'>" + first_row
+                    + " to " + last_row + " by " + first_column + " to " + last_column
+                    + "</a> " + "<span class='ui-icon ui-icon-close' role='presentation'></span>"+
+
 
             
     /* add on the name of tab */
