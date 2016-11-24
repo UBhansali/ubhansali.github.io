@@ -260,9 +260,8 @@ function generate_tabs() {
 	
     
     /* This was to title the tab, and name the title where horizontal values */
-    var tab_name = "<li class='tab'><a href='#tab-" + tab_count_global + "'>" + "</a> " + 
-			"<span class='ui-icon ui-icon-close' role='presentation'></span>"+
-                    "</li>";
+    var tab_name = $('div[id="mytabs"] ul .ui-tabs-active > a').attr("href");
+
             
     /* add on the name of tab */
     $("div#tabs ul").append(tab_name);
