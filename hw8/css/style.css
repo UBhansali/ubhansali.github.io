@@ -1,7 +1,7 @@
 /* Udit Bhansali
-   Assignment #7
+   Assignment #8
    Udit_Bhansali@student.uml.edu
-   November 15, 2016
+   November 22, 2016
 */
 
 /* styling for body */
@@ -158,5 +158,6 @@ input.error {
 
 /* styling for create buttom for the form */
 .actions {
-}
 	text-align: center;
+}
+	
