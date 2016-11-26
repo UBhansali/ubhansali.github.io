@@ -263,9 +263,7 @@ function generate_tabs() {
     Using http://stackoverflow.com/questions/5912762/jquery-ui-tabs-how-to-select-a-tab-based-on-its-id-not-based-on-index */
     var tab_name = "<li class='tab'><a href='#tab-" + tab_count_global + "'>" + first_row
                     + " to " + last_row + " by " + first_column + " to " + last_column
-                    + "</a> " + "<span class='ui-icon ui-icon-close' role='presentation'></span>"+
-
-
+                    + "</a> " + "<span class='ui-icon ui-icon-close' role='presentation'></span>"+ "</li>";
             
     /* add on the name of tab */
     $("div#tabs ul").append(tab_name);
