@@ -13,7 +13,7 @@ function mult_calc() {
     var last_column = Number(document.getElementById('last_c').value);
     console.log(first_row, last_row, first_column, last_column);
     
-	if(last_row < first_column) {
+	if(last_row < first_row) {
         var temp = first_row;
         first_row = last_row;
         last_row = temp;
@@ -64,7 +64,7 @@ function create_table(created_array) {
     var first_column = Number(document.getElementById('first_c').value);
     var last_column = Number(document.getElementById('last_c').value);
     
-     if(last_row < first_column) {
+     if(last_row < first_row) {
         var temp = first_row;
         first_row = last_row;
         last_row = temp;
