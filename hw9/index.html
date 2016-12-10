@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+File: /~ubhansal/index.html
+Assignment 9: Mini Scrabble Game implementation
+Udit Bhansali, username: ubhansal
+Udit_Bhansali@student.uml.edu
+UMass Lowell Student in COMP 4610
+Created on 12/05/2016
+I wasn't able to implement the dictionary as I was running short of time.
+Ther are couple of bugs you'll come across in the assignment.
+Copyright (c) 2016 by Udit Bhansali. All Rights Reserved.  
+May be freely copied or excerpted for educational purposes with credit to the author.
+-->
+<head>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Linking to jQuery UI style sheet -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css">
+    
+	<title>Udit Bhansali's web page</title>
+	
+</head>	
+<body>
+	<!-- Navigation menu -->
+	<div class="wrapper">
+		<ul class="navibar">
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/hw2/">Assignment 2</a></li>
+			<li><a href="/hw3/">Assignment 3</a></li>
+			<li><a href="/index.html">Assignment 4</a></li>
+			<li><a href="/hw6/">Assignment 6</a></li>
+			<li><a href="/hw7/">Assignment 7</a></li>
+		</ul>
+	</div>
+	<!-- Main content area -->
+	<h1> Scrabble </h1>
+        <hr>
+        <!--This div was used for my old implementation which I struggled with -->
+        <div class='center'>
+         <div id="board"></div>
+        </div>
+        <!--I used double letter and double words for my implementation-->
+        <table id="scrabble_board_row">
+            <tr>
+                <td id="drop0" class="double_letter"></td>
+                <td id="drop1"></td>
+                <td id="drop2"></td>
+                <td id="drop3" class="double_word"></td>
+                <td id="drop4"></td>
+                <td id="drop5"></td>
+                <td id="drop6"></td>
+                <td id="drop7" class=" double_letter"></td>
+                <td id="drop8"></td>
+                <td id="drop9"></td>
+                <td id="drop10"></td>
+                <td id="drop11" class="double_word"></td>
+                <td id="drop12"></td>
+                <td id="drop13"></td>
+                <td id="drop14" class="double_letter"></td>                
+            </tr>
+        </table>
+        <div class="word"> Word Created: <span id="created_word">____</span> </div>
+        <div class="score">Score: <span id="user_score">____</span></div>
+       
+        <div class='center'>
+		<!--<img id="scrabble_rack" src='scrabbleimages/scrabble_rack.png'>-->
+        <div id="rack"></div>
+        </div>
+        
+        <!--Adding all the necessary Javascript libraries like JQuery, JQuery UI and my Javascript file. --> 
+         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <!--Adding the jQuery UI library -->
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+         <script type='text/javascript' src="scrabble.js"></script>
+		<script>
+        $(document).ready(function() {
+            load_pieces();
+            load_droppable_pieces();
+        });
+        </script>
+		<br>        
+        <p class="validator">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+		    <img style="border:0;width:88px;height:31px"
+			 src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+			 alt="Valid CSS!" />
+            </a> 
+	    <a href="https://validator.w3.org/check?uri=referer">
+            <img alt="Valid HTML4.01" src="https://www.w3.org/Icons/valid-html401-blue.png" /></a>
+        </p>
+</body>
