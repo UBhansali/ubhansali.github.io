@@ -1,1 +1,167 @@
+/* Udit Bhansali
+   Assignment #7
+   Udit_Bhansali@student.uml.edu
+   November 15, 2016
+*/
 
+/* styling for body */
+body {
+	font-family: Cambria, Georgia, serif;
+    	color: #FFCDBC;
+	background-color: #F5853F;
+}
+
+/* Navigation bar */
+ul.navibar {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.wrapper ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.wrapper li {
+	float: left;
+	padding: 2px 5px;
+}
+
+/* CSS for list elements */
+li {
+	display: inline;
+	text-align: center;
+	padding: 6px 18px 5px 18px;
+}
+
+li a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/* heading text */
+h1 {
+	font-family: Cambria, Georgia, serif;
+	color: white;
+    padding:10px;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+}
+
+.clear{
+	clear:both;
+}
+.title {
+    font-size: 50px;
+}
+/*Overall format and how each header 2 should look like*/
+h2 {
+    color: white;
+    text-align: center;    
+    background: rgba(0, 0, 0, .5);  
+
+}
+/*Overall format and how each paragraph should look like*/
+p {
+    color: white;
+    margin: auto;
+    text-align: center;
+    /*word-wrap: break-word;*/
+     
+   
+}
+/*This was to center and add a border for certain texts*/
+.center {
+    margin: auto;
+    /*text-align:center;*/
+    
+    padding: 10px;
+    
+}
+/*This is to edit my pieces class for my table.*/
+.pieces {
+    height: 50px;
+    width: 50px;
+    z-index: 9;
+	text-align: start;
+}
+/*This was to edit how big I wanted the droppable transparent images to be
+  This was more useful on my old implementation that I kind of scrapped */
+.droppable{
+    height: 65px;
+    width: 65px;
+    z-index: 0;
+}
+/*This was to edit the display "Word:___" on my page */
+#created_word {
+   color: white;
+   margin: auto;
+   text-align: center;
+}
+/*This was to edit the display "Word:___" on my page */
+.word {
+    color:white;
+    margin: auto;
+    text-align: center;
+}
+/*This was to edit the display "Score:___" on my page */
+.score {
+     color:white;
+    margin: auto;
+    text-align: center;
+}
+/*This was to edit how my scrabble board looked like*/
+#scrabble_board_row {
+     border: solid 5px black;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+/*Was editing the general layout of what each td should look like. I received help
+  from Jason Downing to make things look nicer.*/
+td {
+  background: #D2B48C;
+  border: solid 2px white;
+  height: 50px;
+  width: 50px;
+  z-index: 3
+}
+/*This was to make certain tiles look special I just loaded an image in the specific tile
+  I got the permission of Jason Downing to use the images that he used for his own scrabble 
+  board. */
+.double_letter{
+    background-image: url("../scrabbleimages/double_letter.png");
+}
+/*This was to make certain tiles look special I just loaded an image in the specific tile
+  I got the permission of Jason Downing to use the images that he used for his own scrabble 
+  board. */
+.double_word {
+    background-image: url("../scrabbleimages/double_word.png");
+}
+/* styling for validators */
+.validator {
+    	margin: auto;
+    	padding: 10px;
+   	display: table;
+    	bottom: auto;   
+}
+
+#rack{
+	background-image: url("../scrabbleimages/scrabble_rack.png");
+	width:588px;
+	height:182px;
+	margin: auto;
+    
+}
